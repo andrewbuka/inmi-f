@@ -2646,3 +2646,160 @@
             url('../img/antoil-plus-water-bg.png') center bottom / cover no-repeat;
     }
 }
+
+/* Compact Antoil homepage hero: reduce dead space and make product/content denser */
+#home .main-slider .main-slide.main-slide-antoil .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(18px, 3vw, 44px);
+    min-height: clamp(520px, 58vw, 690px);
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+#home .main-slider .main-slide.main-slide-antoil .main-slide-info {
+    flex: 0 0 43%;
+    max-width: 500px;
+    padding-top: 0;
+}
+
+#home .main-slider .main-slide.main-slide-antoil .main-slide-info .title {
+    margin-bottom: 14px;
+    font-size: clamp(42px, 5vw, 76px);
+    line-height: 0.94;
+    letter-spacing: -0.045em;
+}
+
+#home .main-slider .main-slide.main-slide-antoil .main-slide-info p {
+    max-width: 460px;
+    margin-bottom: 18px;
+    font-size: clamp(15px, 1.12vw, 18px);
+    line-height: 1.45;
+}
+
+#home .main-slider .main-slide.main-slide-antoil .main-slide-benefits {
+    justify-content: flex-start;
+    gap: 8px;
+    max-width: 500px;
+    margin: 0 0 18px;
+}
+
+#home .main-slider .main-slide.main-slide-antoil .main-slide-benefits li {
+    min-height: 56px;
+    padding: 10px 12px;
+}
+
+#home .main-slider .main-slide.main-slide-antoil .main-slide-benefits .benefit-number {
+    margin-right: 8px;
+    font-size: 22px;
+}
+
+#home .main-slider .main-slide.main-slide-antoil .main-slide-benefits .benefit-text {
+    max-width: 96px;
+    font-size: 11px;
+}
+
+#home .main-slider .main-slide.main-slide-antoil .slide-img-cover {
+    flex: 1 1 57%;
+    max-height: none;
+    height: clamp(430px, 48vw, 640px);
+    margin: 0;
+}
+
+#home .main-slider .main-slide.main-slide-antoil .slide-img-cover .slide-img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transform: scale(1.12) translateX(-1%);
+    transform-origin: center;
+}
+
+#home .main-slider .main-slide.main-slide-antoil .slide-img-cover .lable-bike {
+    top: 10%;
+    right: 4%;
+    min-width: 168px;
+    transform: scale(0.9);
+    transform-origin: top right;
+}
+
+@media (max-width: 991px) {
+    #home .main-slider .main-slide.main-slide-antoil .container {
+        gap: 18px;
+        min-height: 520px;
+    }
+
+    #home .main-slider .main-slide.main-slide-antoil .main-slide-info {
+        flex-basis: 48%;
+    }
+
+    #home .main-slider .main-slide.main-slide-antoil .slide-img-cover {
+        flex-basis: 52%;
+        height: 360px;
+    }
+
+    #home .main-slider .main-slide.main-slide-antoil .main-slide-benefits {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 767px) {
+    #home .main-slider .main-slide.main-slide-antoil .container {
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 8px;
+        min-height: 500px;
+        padding-top: 28px;
+        padding-bottom: 24px;
+    }
+
+    #home .main-slider .main-slide.main-slide-antoil .main-slide-info {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #home .main-slider .main-slide.main-slide-antoil .main-slide-info p {
+        max-width: 540px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #home .main-slider .main-slide.main-slide-antoil .main-slide-benefits {
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+
+    #home .main-slider .main-slide.main-slide-antoil .slide-img-cover {
+        width: min(100%, 520px);
+        height: 220px;
+        margin: 0 auto;
+    }
+
+    #home .main-slider .main-slide.main-slide-antoil .slide-img-cover .slide-img {
+        transform: scale(1.18);
+    }
+}
+
+@media (max-width: 575px) {
+    #home .main-slider .main-slide.main-slide-antoil .container {
+        min-height: 430px;
+        padding-top: 22px;
+        padding-bottom: 18px;
+    }
+
+    #home .main-slider .main-slide.main-slide-antoil .main-slide-info .title {
+        margin-bottom: 10px;
+        font-size: 34px;
+    }
+
+    #home .main-slider .main-slide.main-slide-antoil .main-slide-info p {
+        margin-bottom: 12px;
+        font-size: 14px;
+        line-height: 1.35;
+    }
+
+    #home .main-slider .main-slide.main-slide-antoil .slide-img-cover {
+        height: 178px;
+    }
+}
