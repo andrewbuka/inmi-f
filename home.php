@@ -32,6 +32,10 @@
 						$slide_title = get_the_title();
 						$slide_classes = array( 'main-slide' );
 
+						if ( false !== strpos( $slide_title, 'Антойл' ) ) {
+							$slide_classes[] = 'main-slide-antoil';
+						}
+
 						if ( false !== strpos( $slide_title, 'Антойл+' ) ) {
 							$slide_classes[] = 'main-slide-antoil-plus';
 						}
